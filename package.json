@@ -1,16 +1,16 @@
 {
   "name": "electron-wcjs-player",
   "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
+  "description": "to test packager and winstaller",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "pack-win": "electron-packager . electron-wcjs-player --asar --overwrite --platform=win32 --arch=ia32 --icon=assets/app-icon/win/app.ico --prune=true --out=out --extra-resource='./wcjs-prebuilt/*' --version-string.CompanyName='TestDrive' --version-string.FileDescription='Test Packager' --version-string.ProductName='Test Packager'",
+    "pack-win": "electron-packager . electron-wcjs-player --asar --overwrite --platform=win32 --arch=ia32 --icon=assets/app-icon/win/app.ico --prune=true --out=out --version-string.CompanyName='TestDrive' --version-string.FileDescription='Test Packager' --version-string.ProductName='Test Packager'",
     "installer": "node ./script/installer.js",
     "release": "node ./script/release.js"
   },
-  "author": "",
+  "author": "TestDrive",
   "license": "ISC",
   "dependencies": {
     "wcjs-player": "^6.0.0",
