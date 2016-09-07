@@ -1,0 +1,22 @@
+{
+  "name": "electron-wcjs-player",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron-prebuilt": "^1.2.5",
+    "wcjs-player": "^6.0.0",
+    "wcjs-prebuilt": {
+      "runtime": "electron",
+      "runtimeVersion": "1.2.5",
+      "version": "0.2.5"
+    }
+  }
+
+}
