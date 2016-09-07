@@ -1,5 +1,5 @@
 if (process.platform == 'win32')
-    process.env['VLC_PLUGIN_PATH'] = require('path').join(__dirname, 'node_modules/wcjs-prebuilt/bin/plugins');
+    process.env['VLC_PLUGIN_PATH'] = require('path').join(__dirname, 'wcjs-prebuilt/bin/plugins');
 
 const electron=require('electron');
 const app = electron.app;  // Module to control application life.
@@ -13,7 +13,7 @@ let mainWindow;
 app.on('ready', function() {
 
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 1280, height: 720});
+  mainWindow = new BrowserWindow({width: 960, height: 720});
 
   // and load the index.html of the app.
   mainWindow.loadURL(`file://${__dirname}/index.html`);

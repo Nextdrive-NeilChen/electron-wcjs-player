@@ -8,10 +8,14 @@ body,html{ width: 100%; height: 100%; padding: 0px; margin:0px }
 <body>
 <div id="player"></div>
 <script>
+
+var pathToWebChimera = require('path').join(__dirname, 'wcjs-prebuilt/bin')
+
 var wjs = require("wcjs-player");
 var player = new wjs("#player").addPlayer({
     autoplay: true,
-    wcjs: require('wcjs-prebuilt')
+    //wcjs: require('wcjs-prebuilt')
+    wcjs: require(pathToWebChimera)
 });
 
 //player.addPlaylist("http://archive.org/download/CartoonClassics/Krazy_Kat_-_Keeping_Up_With_Krazy.mp4");
