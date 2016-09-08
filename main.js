@@ -1,5 +1,5 @@
 if (process.platform == 'win32')
-    process.env['VLC_PLUGIN_PATH'] = require('path').join(__dirname, 'wcjs-prebuilt/bin/plugins');
+    process.env['VLC_PLUGIN_PATH'] = require('path').join(__dirname, '../../wcjs-prebuilt/bin/plugins');
 
 const electron=require('electron');
 const app = electron.app;  // Module to control application life.

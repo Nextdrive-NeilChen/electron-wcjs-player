@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "pack-win": "electron-packager . electron-wcjs-player --asar --asar-unpackDir='**/{wcjs-prebuilt}/**/*' --overwrite --platform=win32 --arch=ia32 --icon=assets/app-icon/win/app.ico --prune=true --out=out --version-string.CompanyName='TestDrive' --version-string.FileDescription='Test Packager' --version-string.ProductName='Test Packager'",
+    "pack-win": "electron-packager . electron-wcjs-player --asar --overwrite --platform=win32 --arch=ia32 --icon=assets/app-icon/win/app.ico --prune=true --out=out --version-string.CompanyName='TestDrive' --version-string.FileDescription='Test Packager' --version-string.ProductName='Test Packager'",
     "installer": "node ./script/installer.js",
     "release": "node ./script/release.js"
   },
