@@ -8,7 +8,11 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'npm install'
+        sh '''node -v
+ls -la
+cat package.json
+npm -v
+npm install'''
       }
     }
 
